@@ -6,6 +6,17 @@
 !510 history
 !514 code
 !517 git status
+!526 git add . (añade todos los archivos dentro de la carpeata antes del commit)
+!529 git log (muestra la historia de commits, hvc le gana)
+
+
+
+
+
+
+
+
+
 
 
 

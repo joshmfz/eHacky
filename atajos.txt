@@ -1,0 +1,31 @@
+!499 pwd
+!505 alias eHacky="cd /c/Users/Usuario/Desktop/eHacky"
+!506 alias chome="cd /c/Users/Usuario/Desktop"
+!507 alias hvc="git log --all --graph --decorate --oneline"
+!508 alias hvce="git log --all"
+!510 history
+!514 code
+!517 git status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

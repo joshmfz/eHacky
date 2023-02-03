@@ -11,6 +11,13 @@ El editor de fallos de commit "", se llama Nano
 !526 git add . (añade todos los archivos dentro de la carpeata antes del commit)
 !529 git log (muestra la historia de commits, hvc le gana)
 
+!552  alias cmaster="git checkout master"
+!553  alias cdevlab="git checkout devlab"
+!554  alias pushom="git push origin master"
+!555  alias pullom="git pull origin master"
+!556  alias pushod="git pull origin devlab"
+!557  alias pullod="git pull origin devlab"
+
 
 
 

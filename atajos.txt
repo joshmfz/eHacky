@@ -1,3 +1,5 @@
+El editor de fallos de commit "", se llama Nano
+
 !499 pwd
 !505 alias eHacky="cd /c/Users/Usuario/Desktop/eHacky"
 !506 alias chome="cd /c/Users/Usuario/Desktop"

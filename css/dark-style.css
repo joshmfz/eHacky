@@ -1,0 +1,33 @@
+/* 
+
+        DARK MODE COLORS 
+
+*/
+
+.oscuro{ 
+    background: rgb(0, 0, 35);
+    color: aliceblue;
+}
+
+/* 
+
+    Navbar
+
+*/
+
+.oscuro .btn-dark{
+    color: rgb(15, 7, 0);
+    border-color: rgb(0, 0, 35);
+    background-color: rgb(255, 255, 255); 
+    transition: 0.3s;
+}
+
+.oscuro .btn-dark:hover{
+    border-color: rgb(0, 255, 255);
+    transition: 0.3s;
+}
+
+.oscuro ul{ 
+    background: rgb(0, 0, 35);
+    color: aliceblue;
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+html{
+    font-family: 'Asap';
+    font-size: 14px;
+    line-height: 28px;
+    height: 100%;
+}
+
+body{
+    font-family: 'Asap', sans-serif;
+    color: aliceblue;
+    background: rgb(196, 200, 204);
+    margin: 0;
+}
+
+
+/* 
+
+    Navbar
+
+*/
+
+
+
+.nav{
+    position: static;
+}
+
+
+
+ul{
+    background: rgb(196, 200, 204);
+    color: aliceblue;
+    list-style-type: none;
+    margin: 0;    padding: 0;
+    overflow: hidden;
+    box-sizing: content-box;   
+    border-bottom: 1px solid rgba(0, 255, 255, 0.5);
+    position: fixed;
+    width: 100%;
+}
+
+  
+li{ 
+    float: left;    
+    border-right: 1px solid #bbb;
+    padding: 10px;
+}
+  
+li a{
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover{    background-color: rgb(75, 0, 75);    }
+
+.btn-dark{
+    color: aliceblue;
+    background-color: rgb(0, 0, 35);
+    width: max-content;    height: max-content;
+    box-sizing: border-box;
+    border: 5px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 90px;
+    font-size: 15px;
+    
+    position: absolute;
+    right: 20px;
+    padding: 20px 20px;
+    transition: 0.3s;
+}
+
+.btn-dark:hover{
+    background-color: rgb(0, 0, 35);
+    border-color: rgb(0, 255, 255);
+    transition: 0.3s;
+}
+
+
+
+/* 
+
+HOME
+
+*/
+
+.juniger-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    max-width: 570px;    max-height: 180px;
+    padding: 10px;
+    margin: 20px;
+    
+}
+

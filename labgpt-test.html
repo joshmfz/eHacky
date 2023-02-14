@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/HyV18yp.png" />
+    <title>eHacky</title>
+
+    <script>
+        function cambiarModo() { 
+            var cuerpoweb = document.body; 
+            cuerpoweb.classList.toggle("oscuro"); 
+        }
+        </script>
+    <script src="https://kit.fontawesome.com/d4e059ee95.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        html{
+            font-family: 'Asap';
+            font-size: 18px;
+            line-height: 28px;
+            height: 100%;
+        }
+
+        body{
+            font-family: 'Asap', sans-serif;
+            color: black;
+            background: aliceblue;
+            margin: 0;
+        }
+
+        /* 
+        
+        Colores
+        
+        */
+
+        .btn-dark{
+            color: aliceblue;
+            background-color: rgb(0, 0, 35);
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 50px;
+            transition: 0.3s;
+        
+            width: max-content;    height: max-content;
+            position: fixed;
+            box-sizing: border-box;
+            padding: 20px 20px;
+            right: 10px; bottom: 10px;
+        }
+
+        .btn-dark i {
+            font-size: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .btn-dark:hover{
+            background-color: rgb(0, 0, 35);
+            border-color: rgb(0, 255, 255);
+            transition: 0.3s;
+        }
+
+        /* 
+
+        DARK MODE COLORS 
+
+        */
+
+        .oscuro{ 
+            background: rgb(15, 15, 15);
+            color: aliceblue;
+        }
+
+        /* 
+
+            Navbar
+
+        */
+
+        .oscuro .btn-dark{
+            color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 35); 
+            transition: 0.3s;
+        }
+
+        .oscuro .btn-dark:hover{
+
+            border-color: rgb(0, 255, 255);
+            transition: 0.3s;
+        }
+
+        .oscuro ul{ 
+            background: rgb(0, 0, 35);
+            color: rgb(240, 248, 255);
+        }
+
+        .oscuro .header{
+            background: rgb(15, 15, 15);
+        }
+
+        .oscuro .video-card{
+            background-color: rgb(15, 15, 25);
+        }
+
+        .oscuro a:link {
+            color: white;
+        }
+
+        .oscuro a:visited {
+            color: white;    
+        }
+
+        .oscuro a:hover {
+            color: rgb(20, 20, 255);
+        }
+
+        /* 
+        
+        Colores
+        
+        */
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(196, 200, 204);
+            border-bottom: 5px cyan solid;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+        .header a {
+            font-size: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: black;    
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 85px;
+        }
+        .video-card {
+            width: calc(25% - 10px);
+            background-color: rgb(196, 200, 204);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px cyan solid;
+        }
+        .video-card iframe{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .video-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .video-card h3 {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .video-card p {
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: justify;
+        }
+        @media (max-width: 800px) {
+            .video-card {
+            width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 550px) {
+            .video-card {
+            width: 100%;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <button type="button" class="btn-dark" onclick="cambiarModo()"><i class="fa-sharp fa-solid fa-circle-half-stroke"></i> </button>
+    
+    <header class="header">
+        <img src="https://i.imgur.com/HyV18yp.png" alt="Logo">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#videos">Videos</a>
+            <a href="#descubrenos">Descubrenos</a>
+        </nav>
+    </header>
+
+    <section class="video-grid">
+        <div class="video-card">
+            <iframe class="yt-iframe" src="https://www.youtube.com/embed/C6QDXBZDUcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <a href="https://youtu.be/HdIQWg8Wq8E" onclick="window.open(this.href, '_blank'); return false;">
+                <img src="https://i.imgur.com/D10sO5p.png" alt="Portada del video 1">
+                <h3>Título del video 1</h3>
+            <p>Breve descripción del video 1.</p>
+            </a>
+        </div>
+
+        <div class="video-card">
+            <a href=""></a>
+          <img href="video2.jpg" alt="Portada del video 2">
+          <h3>Título del video 2</h3>
+          <p>Breve descripción del video 2.</p>
+        </div>
+
+        <div class="video-card">
+          <img src="video3.jpg" alt="Portada del video 3">
+          <h3>Título del video 3</h3>
+          <p>Breve descripción del video 3.</p>
+        </div>
+
+        <div class="video-card">
+          <img src="video4.jpg" alt="Portada del video 4">
+          <h3>Título del video 4</h3>
+          <p>Breve descripción del video 4.</p>
+        </div>
+
+        <div class="video-card">
+          <img src="video5.jpg" alt="Portada del video 5">
+          <h3>Título del video 5</h3>
+          <p>Breve descripción del video 5.</p>
+        </div>
+
+        <div class="video-card">
+          <img src="video6.jpg" alt="Portada del video 6">
+          <h3>Título del video 6</h3>
+          <p>Breve descripción del video 6.</p>
+        </div>
+
+        <div class="video-card">
+          <img src="video7.jpg" alt="Portada del video 7">
+          <h3>Título del video 7</h3>
+          <p>Breve descripción del video 7.</p>
+        </div>
+
+        <div class="video-card">
+          <img src="video8.jpg" alt="Portada del video 8">
+          <h3>Título del video 8</h3>
+          <p>Breve descripción del video 8.</p>
+        </div>
+        
+        <div class="video-card">
+            <img src="video9.jpg" alt="Portada del video 9">
+            <h3>Título del video 9</h3>
+            <p>Breve descripción del video 9</p>
+        </div>
+    </section>
+
+
+  </body>
+
+</html>

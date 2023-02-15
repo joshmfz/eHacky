@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="./css/dark-style.css">
 
     <style>
+        .flex-grid{
+            margin-top: 75px;
+            
+        }
+
         .sm{
             display: flex;
             background: black;
@@ -38,8 +43,6 @@
         .sm .sm-btn:nth-child(2n+1){
             background: greenyellow;
         }
-
-
 
         .smg{
             display: grid;
@@ -113,7 +116,12 @@
             right: 0;
         }
 
-        nav{
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            top: 0;
             width: 100%;
             height: 60px;
             background: rgba(0, 255, 255);
@@ -124,6 +132,8 @@
             position: sticky;
             top: 0;
         }
+
+        
 
         .zi1{
             background: cyan;
@@ -145,7 +155,7 @@
         <nav></nav>
     </header>
 
-    <section>
+    <section class="flex-grid">
         <div class="sm">
             <div class="sm-btn">1abcdefgh</div>
             <div class="sm-btn">2</div>

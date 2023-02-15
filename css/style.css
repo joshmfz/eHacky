@@ -2,13 +2,14 @@
 
 html{
     font-family: 'Asap';
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 62.5%;
+    line-height: 1.5;
     height: 100%;
 }
 
 body{
     font-family: 'Asap', sans-serif;
+    font-size: 1.8rem;
     color: black;
     background: rgb(196, 200, 204);
     margin: 0;

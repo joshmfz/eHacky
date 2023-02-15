@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/HyV18yp.png" />
-    <title>eHacky</title>
+    <title>eHacky - LabGPT Test</title>
 
     <script>
         function cambiarModo() { 
@@ -19,16 +19,18 @@
 
         html{
             font-family: 'Asap';
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 62.5%;
+            line-height: 1.5;
             height: 100%;
         }
 
         body{
             font-family: 'Asap', sans-serif;
+            font-size: 1.8rem;
             color: black;
             background: aliceblue;
             margin: 0;
+            
         }
 
         /* 
@@ -103,7 +105,10 @@
         }
 
         .oscuro .video-card{
-            background-color: rgb(15, 15, 25);
+            background-color: rgb(15, 15, 15);
+        }
+        .oscuro .video-card:hover{
+            background-color: rgb(0, 0, 25);
         }
 
         .oscuro a:link {
@@ -161,24 +166,31 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-top: 85px;
+            margin-top: 8.5rem;
         }
         .video-card {
-            width: calc(25% - 10px);
-            background-color: rgb(196, 200, 204);
+            width: 28%;
+            height: auto;
             padding: 20px;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10rem;
+            margin-left: 10px;
+            margin-right: 10px;
             border: 1px cyan solid;
+            border-radius: 25px;
+        }
+        .video-card:hover{
+            background-color: rgb(196, 200, 204);
         }
         .video-card iframe{
             width: 100%;
-            height: 180px;
+            height: 100%;
             object-fit: cover;
+            border-radius: 20px;
         }
         .video-card img {
-            width: 100%;
-            height: 200px;
+            width: 80%;
+            height: 80%;
             object-fit: cover;
         }
         .video-card h3 {
@@ -200,6 +212,10 @@
             width: 100%;
             }
         }
+        .video-card .text-section {
+            max-height: 60%;
+            overflow: auto;
+        }
     </style>
   </head>
 
@@ -220,17 +236,21 @@
         <div class="video-card">
             <iframe class="yt-iframe" src="https://www.youtube.com/embed/C6QDXBZDUcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <a href="https://youtu.be/HdIQWg8Wq8E" onclick="window.open(this.href, '_blank'); return false;">
-                <img src="https://i.imgur.com/D10sO5p.png" alt="Portada del video 1">
+                <!-- <img src="https://i.imgur.com/D10sO5p.png" alt="Portada del video 1"> -->
                 <h3>Título del video 1</h3>
             <p>Breve descripción del video 1.</p>
             </a>
         </div>
 
         <div class="video-card">
-            <a href=""></a>
-          <img href="video2.jpg" alt="Portada del video 2">
-          <h3>Título del video 2</h3>
-          <p>Breve descripción del video 2.</p>
+            <iframe class="yt-iframe" src="https://www.youtube.com/embed/C6QDXBZDUcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="text-section">
+                <a href="https://youtu.be/HdIQWg8Wq8E" onclick="window.open(this.href, '_blank'); return false;">
+                    <!-- <img src="https://i.imgur.com/D10sO5p.png" alt="Portada del video 1"> -->
+                    <h3>Título del video 2</h3>
+                <p>Breve descripción del video 2</p>
+                </a>
+            </div>
         </div>
 
         <div class="video-card">
